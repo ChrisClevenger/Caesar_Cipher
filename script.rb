@@ -1,7 +1,7 @@
 ## Input a string and a given shift factor 
 ## Method should resemble caesar_cipher("What a string!", 5)
-def caesar_cipher(string, shift_factor)
 
+def caesar_cipher(string, shift_factor)
 
 ## Convert the string to an array of characters using .split
 
@@ -22,26 +22,19 @@ def caesar_cipher(string, shift_factor)
             ascii_value # For non alphabetical
         end
 
-
-
 ## Convert new ord # to chr. Edited chr method to account for nil
 
         shifted_value.nil? ? item : shifted_value.chr
     end 
 
-
-
 ## Join the array of new letters 
 
     encrypted_string = encrypted_characters.join("")
-
-
 
 ## Puts new cipher 
 
     puts encrypted_string 
 
-
 end 
 
-caesar_cipher("Test", 1)
+caesar_cipher("I love Jessica Willems!", 7)
